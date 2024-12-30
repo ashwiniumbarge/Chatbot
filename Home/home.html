@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Spotify Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#review-section">Review Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Spotify Music</h1>
+        <p>Discover, Listen, and Share the best music experience.</p>
+        <button class="btn-primary">Get Started</button>
+    </section>
+
+    <!-- Footer Review Section -->
+    <footer>
+        <section id="review-section" class="review-section">
+            <h1>How Would You Rate Our App Experience?</h1>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <!-- Feedback Text Input -->
+            <textarea id="feedback" placeholder="Leave your feedback here..."></textarea>
+
+            <!-- Feedback Message Section -->
+            <div id="feedback-message" class="feedback-message" style="display: none;"></div>
+
+            <button class="btn-primary" id="submit-review">Submit</button>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

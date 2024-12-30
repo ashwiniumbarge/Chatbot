@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Music Authentication</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h3>Spotify Music</h3>
+        <div class="tab-switch">
+            <button id="signin-tab" class="active">Sign In</button>
+            <button id="signup-tab">Sign Up</button>
+        </div>
+
+        <!-- Sign In Form -->
+        <div id="signin-form" class="tab-content active">
+            <div class="form-group">
+                <label for="signin-email">Email:</label>
+                <input type="text" id="signin-email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" placeholder="Enter your password" />
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="submit-btn" onclick="signin()">Sign In</button>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" class="tab-content">
+            <div class="form-group">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" placeholder="Create a password" />
+            </div>
+            <button class="submit-btn" onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
